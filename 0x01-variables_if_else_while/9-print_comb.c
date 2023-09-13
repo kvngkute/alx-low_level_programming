@@ -3,14 +3,20 @@
  * main - This program prints all the possible combination of single-digits
  * Return: Returns 0 when succesful
  */
-int main(void)
+int main()
 {
-int i;
-for (i = 0 ; i < 10 ; i++)
+int i, j;
+for (i = 0; i <= 9; i++)
 {
-putchar(i + '0');
+for (j = 0; j <= 9; j++)
+{
+if (j != 0)
+{
 putchar(',');
 putchar(' ');
+}
+putchar((i % 10) + '0');
+}
 }
 return (0);
 }

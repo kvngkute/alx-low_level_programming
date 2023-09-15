@@ -16,7 +16,7 @@ else
 {
 for (row = 1; row <= size; row++)
 {
-for (spaces = size + row; spaces >= 1; spaces--)
+for (spaces = size - row; spaces >= 1; spaces--)
 {
 _putchar(' ');
 }
